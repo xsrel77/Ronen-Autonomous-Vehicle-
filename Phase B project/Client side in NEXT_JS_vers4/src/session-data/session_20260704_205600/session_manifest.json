@@ -1,0 +1,52 @@
+{
+  "schema_version": 3,
+  "kind": "to_client_debug_session",
+  "session_id": "session_20260704_205600",
+  "session_dir": "Debugging/toClient/sessions/session_20260704_205600",
+  "started_at_ms": 17391440,
+  "started_at_local": "2026-07-04 20:56:00",
+  "stopped_at_ms": 17428011,
+  "stopped_at_local": "2026-07-04 20:56:36",
+  "stop_reason": "manual_L2",
+  "paths": {
+    "latest": "latest.json",
+    "timeline": "robot_timeline.jsonl",
+    "detection_events": "detection_events.jsonl",
+    "raw_candidates": "raw_candidates.jsonl",
+    "map_pose_timeline": "map_pose_timeline.jsonl",
+    "map_overlay_summary": "map_overlay_summary.json",
+    "detections_on_map": "detections_on_map.jsonl",
+    "ros2_map_assets_dir": "ros2_map",
+    "images_ok_dir": "images_ok",
+    "images_ok_raw_dir": "images_ok_raw",
+    "images_weak_noise_dir": "images_weak_noise",
+    "images_weak_noise_raw_dir": "images_weak_noise_raw",
+    "video": "videos/detection_video_20260704_205600.mp4",
+    "lidar_summary": "lidar/lidar_summary.jsonl",
+    "lidar_preview": "lidar/lidar_map_preview.json"
+  },
+  "video": {
+    "active": false,
+    "writer_open": false,
+    "backend": "opencv_mp4v_fallback",
+    "target_fps": 10.0000,
+    "max_width": 1280,
+    "max_height": 720,
+    "bitrate_kbps": 2500,
+    "max_bytes": 1073741824,
+    "frames_written": 316,
+    "bytes_written": 26150837,
+    "max_size_reached": false
+  },
+  "counts": {
+    "timeline_rows": 132,
+    "detection_events": 37,
+    "raw_candidate_events": 37,
+    "map_pose_rows": 132,
+    "detections_on_map_events": 37,
+    "ok_images": 31,
+    "weak_noise_images": 6,
+    "lidar_summaries": 36,
+    "lidar_preview_points": 1282
+  }
+}

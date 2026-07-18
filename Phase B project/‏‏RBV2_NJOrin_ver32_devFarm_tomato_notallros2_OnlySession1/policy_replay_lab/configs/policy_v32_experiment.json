@@ -1,0 +1,100 @@
+{
+  "schema": "rbv2_policy_v32_experiment_config_v3",
+  "description": "Experimental post-policy layer for RBV2 ver32. It does not train or replace the YOLO/TensorRT model. It adds Review/Candidate, color-based class correction for single tomatoes, and separate yellow Heuristics bunch candidates from weak bunch anchors with child tomato support.",
+  "image_width": 1280,
+  "image_height": 720,
+  "model_class_names": {
+    "0": "eripe bunch",
+    "1": "ripe",
+    "2": "unripe",
+    "3": "unripe bunch"
+  },
+  "display_colors_bgr": {
+    "strong_ripe_tomato": [0, 0, 255],
+    "strong_unripe_tomato": [0, 180, 0],
+    "strong_ripe_bunch": [180, 0, 180],
+    "strong_unripe_bunch": [0, 165, 255],
+    "weak": [255, 255, 0],
+    "noise": [145, 145, 145],
+    "heuristics": [0, 255, 255],
+    "review": [0, 215, 255],
+    "text_bg": [20, 24, 34]
+  },
+  "noise_classification": {
+    "weak_noise_conf_below": 0.30,
+    "severe_single_mask_density_below": 0.06,
+    "severe_bunch_mask_density_below": 0.020,
+    "treat_tomato_sanity_failed_as_noise": true
+  },
+  "color_correction": {
+    "enabled": true,
+    "min_confidence": 0.50,
+    "min_mask_density": 0.30,
+    "min_mask_area": 250.0,
+    "allow_roi_fail": false,
+    "allow_tomato_sanity_failed": false,
+    "ripe_to_unripe_green_yellow_min": 0.45,
+    "ripe_to_unripe_red_max": 0.08,
+    "ripe_to_unripe_warm_max": 0.25,
+    "unripe_to_ripe_red_min": 0.10,
+    "unripe_to_ripe_warm_min": 0.35,
+    "unripe_to_ripe_green_yellow_max": 0.35
+  },
+  "review_candidates": {
+    "enabled": true,
+    "allow_roi_fail": false,
+    "allow_tomato_sanity_failed": false,
+    "min_mask_density": 0.35,
+    "unripe_min_confidence": 0.80,
+    "unripe_min_green_yellow_ratio": 0.35,
+    "unripe_min_mask_area": 1000.0,
+    "ripe_min_confidence": 0.75,
+    "ripe_min_red_ratio": 0.08,
+    "ripe_min_warm_ratio": 0.12,
+    "ripe_min_mask_area": 500.0
+  },
+  "heuristics": {
+    "enabled": true,
+    "anchor_classes": [0, 3],
+    "anchor_confidence_tiers": [
+      {
+        "name": "standard_anchor",
+        "min_confidence": 0.50,
+        "min_child_count": 3,
+        "min_weighted_child_count": 1.50
+      },
+      {
+        "name": "low_anchor_strong_children",
+        "min_confidence": 0.40,
+        "min_child_count": 4,
+        "min_weighted_child_count": 2.50
+      }
+    ],
+    "anchor_allow_roi_fail": false,
+    "anchor_hard_min_mask_density": 0.0,
+    "anchor_expand_ratio": 0.20,
+    "child_classes": [1, 2],
+    "child_min_confidence": 0.50,
+    "child_min_mask_density": 0.08,
+    "child_min_mask_area": 100.0,
+    "child_allow_roi_fail": false,
+    "child_allow_tomato_sanity_failed": false,
+    "min_child_count": 3,
+    "min_weighted_child_count": 1.50,
+    "strong_child_weight": 1.0,
+    "near_threshold_child_weight": 0.70,
+    "mid_weak_child_weight": 0.55,
+    "low_weak_child_weight": 0.50,
+    "near_threshold_confidence": 0.80,
+    "mid_weak_confidence": 0.65,
+    "low_weak_confidence": 0.50,
+    "ripe_red_ratio_reference": 0.08,
+    "ripe_warm_ratio_reference": 0.12,
+    "unripe_green_yellow_ratio_reference": 0.08,
+    "maturity_majority_ratio": 1.25,
+    "min_maturity_score_for_decision": 1.25,
+    "allow_mixed_bunch": true,
+    "heuristic_nms_iou": 0.35,
+    "bbox_padding_ratio": 0.08
+  }
+}

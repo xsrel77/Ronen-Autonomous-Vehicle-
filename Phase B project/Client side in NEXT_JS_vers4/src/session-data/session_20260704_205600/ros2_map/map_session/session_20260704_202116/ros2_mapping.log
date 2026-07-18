@@ -1,0 +1,64 @@
+[ros2_slam][start] session=/home/ronen/Desktop/RBV2_NJOrin_ver32_devFarm_tomato/maps/ros2_slam/session_20260704_202116
+[ros2_slam][start] launching rbv2_mapping + slam_toolbox
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-07-04-20-21-17-937487-ronen-desktop-15280
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [rbv2_lidar_scan_node-1]: process started with pid [15283]
+[INFO] [rbv2_odom_udp_bridge_node-2]: process started with pid [15285]
+[INFO] [static_transform_publisher-3]: process started with pid [15287]
+[INFO] [async_slam_toolbox_node-4]: process started with pid [15289]
+[static_transform_publisher-3] [WARN] [1783185678.038423550] []: Old-style arguments are deprecated; see --help for new-style arguments
+[rbv2_lidar_scan_node-1] [INFO] [1783185678.073211175] [rbv2_lidar_scan_node]: RBV2 Mini LiDAR ROS2 node started on /dev/ttyUSB0
+[static_transform_publisher-3] [INFO] [1783185678.082555637] [rbv2_base_to_laser_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-3] translation: ('0.100000', '0.000000', '0.150000')
+[static_transform_publisher-3] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-3] from 'base_link' to 'laser'
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185678.088135107] [rbv2_odom_udp_bridge_node]: RBV2 odom UDP bridge listening on 127.0.0.1:29129
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185678.108307486] [rbv2_odom_udp_bridge_node]: received first UDP odom packet: x=0.103 y=0.000 yaw=0.00 valid=1 fresh=1 orig_valid=1 orig_fresh=1
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185678.108429956] [rbv2_odom_udp_bridge_node]: UDP odom packets=1 publish x=0.103 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[async_slam_toolbox_node-4] [INFO] [1783185678.171733356] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[async_slam_toolbox_node-4] Info: clipped range threshold to be within minimum and maximum range!
+[async_slam_toolbox_node-4] Registering sensor: [Custom Described Lidar]
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185679.148315977] [rbv2_odom_udp_bridge_node]: UDP odom packets=41 publish x=0.240 y=0.000 yaw=0.00 v=0.191 w=0.000 fcmd=40.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185680.148336736] [rbv2_odom_udp_bridge_node]: UDP odom packets=81 publish x=0.423 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185681.148374380] [rbv2_odom_udp_bridge_node]: UDP odom packets=121 publish x=0.557 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185682.148423819] [rbv2_odom_udp_bridge_node]: UDP odom packets=160 publish x=0.656 y=0.000 yaw=0.00 v=0.191 w=0.000 fcmd=40.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185683.148457182] [rbv2_odom_udp_bridge_node]: UDP odom packets=200 publish x=0.713 y=0.000 yaw=0.00 v=0.191 w=0.000 fcmd=40.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185684.148589928] [rbv2_odom_udp_bridge_node]: UDP odom packets=239 publish x=0.755 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185685.168579123] [rbv2_odom_udp_bridge_node]: UDP odom packets=279 publish x=0.842 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185686.168654466] [rbv2_odom_udp_bridge_node]: UDP odom packets=317 publish x=0.964 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185687.168701285] [rbv2_odom_udp_bridge_node]: UDP odom packets=356 publish x=1.132 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185688.168774748] [rbv2_odom_udp_bridge_node]: UDP odom packets=395 publish x=1.136 y=0.000 yaw=0.00 v=0.191 w=0.000 fcmd=40.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185689.168781796] [rbv2_odom_udp_bridge_node]: UDP odom packets=435 publish x=1.269 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185690.188792689] [rbv2_odom_udp_bridge_node]: UDP odom packets=475 publish x=1.403 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185691.188868323] [rbv2_odom_udp_bridge_node]: UDP odom packets=514 publish x=1.460 y=0.000 yaw=0.00 v=0.191 w=0.000 fcmd=40.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185692.188900456] [rbv2_odom_udp_bridge_node]: UDP odom packets=553 publish x=1.563 y=0.000 yaw=0.00 v=0.191 w=0.000 fcmd=40.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185693.188929249] [rbv2_odom_udp_bridge_node]: UDP odom packets=593 publish x=1.719 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185694.188944940] [rbv2_odom_udp_bridge_node]: UDP odom packets=632 publish x=1.860 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185695.188999950] [rbv2_odom_udp_bridge_node]: UDP odom packets=671 publish x=1.986 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185696.209096373] [rbv2_odom_udp_bridge_node]: UDP odom packets=699 publish x=1.986 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[ros2_slam][save] waiting briefly for /map before saving
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185697.249076090] [rbv2_odom_udp_bridge_node]: UDP odom packets=720 publish x=1.986 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185698.249111414] [rbv2_odom_udp_bridge_node]: UDP odom packets=740 publish x=1.986 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185699.269148533] [rbv2_odom_udp_bridge_node]: UDP odom packets=760 publish x=1.986 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[ros2_slam][save] /map is available
+[ros2_slam][save] saving map to /home/ronen/Desktop/RBV2_NJOrin_ver32_devFarm_tomato/maps/ros2_slam/session_20260704_202116/map.yaml/.pgm
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185700.269218267] [rbv2_odom_udp_bridge_node]: UDP odom packets=780 publish x=1.986 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[INFO] [1783185700.326378767] [map_saver]: 
+	map_saver lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1783185700.326619033] [map_saver]: Creating
+[INFO] [1783185700.326754334] [map_saver]: Configuring
+[INFO] [1783185700.328673616] [map_saver]: Saving map from 'map' topic to '/home/ronen/Desktop/RBV2_NJOrin_ver32_devFarm_tomato/maps/ros2_slam/session_20260704_202116/map' file
+[WARN] [1783185700.328719634] [map_saver]: Free threshold unspecified. Setting it to default value: 0.250000
+[WARN] [1783185700.328743603] [map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185701.309371093] [rbv2_odom_udp_bridge_node]: UDP odom packets=801 publish x=1.986 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[rbv2_odom_udp_bridge_node-2] [INFO] [1783185702.369265733] [rbv2_odom_udp_bridge_node]: UDP odom packets=822 publish x=1.986 y=0.000 yaw=0.00 v=0.000 w=0.000 fcmd=0.0 scmd=0.0 flags(v=1,f=1,orig_v=1,orig_f=1)
+[WARN] [1783185702.770422961] [map_io]: Image format unspecified. Setting it to: pgm
+[INFO] [1783185702.770554007] [map_io]: Received a 85 X 98 map @ 0.05 m/pix
+[INFO] [1783185702.780377974] [map_io]: Writing map occupancy data to /home/ronen/Desktop/RBV2_NJOrin_ver32_devFarm_tomato/maps/ros2_slam/session_20260704_202116/map.pgm
+[INFO] [1783185702.781791826] [map_io]: Writing map metadata to /home/ronen/Desktop/RBV2_NJOrin_ver32_devFarm_tomato/maps/ros2_slam/session_20260704_202116/map.yaml
+[INFO] [1783185702.782172578] [map_io]: Map saved
+[INFO] [1783185702.782204259] [map_saver]: Map saved successfully
+[INFO] [1783185702.784818674] [map_saver]: Destroying
+[ros2_slam][save] OK

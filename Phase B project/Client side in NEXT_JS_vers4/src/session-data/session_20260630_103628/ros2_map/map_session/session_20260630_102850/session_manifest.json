@@ -1,0 +1,8 @@
+{
+  "source": "slam_toolbox",
+  "navigation_enabled": false,
+  "odom_source": "estimated_cmd_imu_no_encoders",
+  "session_dir": "/home/ronen/Desktop/RBV2_NJOrin_ver31_devFarm_tomato/maps/ros2_slam/session_20260630_102850",
+  "map_yaml": "/home/ronen/Desktop/RBV2_NJOrin_ver31_devFarm_tomato/maps/ros2_slam/session_20260630_102850/map.yaml",
+  "map_pgm": "/home/ronen/Desktop/RBV2_NJOrin_ver31_devFarm_tomato/maps/ros2_slam/session_20260630_102850/map.pgm"
+}

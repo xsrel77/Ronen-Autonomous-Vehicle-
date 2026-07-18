@@ -1,0 +1,123 @@
+//install libarry
+sudo apt-get install -y libsdl2-dev
+
+//first test eco robot
+g++ -std=c++17 -O2 \
+  amain.cpp RaspbotBoard.cpp DriveController.cpp \
+  ServoCamera.cpp MotorDCfb.cpp MotorDCLR.cpp \
+  TestDriveOp_g.cpp JoystickController.cpp \
+  ObjectDetector.cpp TargetTracker.cpp \
+  -I/usr/include/opencv4 \
+  $(pkg-config --libs opencv4) \
+  -I/usr/include/SDL2 -D_REENTRANT \
+  -I/usr/local/cuda/include \
+  -L/usr/local/cuda/lib64 \
+  -lSDL2 -pthread \
+  -lnvinfer -lnvonnxparser -lcudart \
+  -o amain
+
+sudo ./amain
+
+
+
+
+//test with class mini lidar
+g++ -std=c++17 -O2 \
+app/amain.cpp \
+hardware/RaspbotBoard.cpp \
+hardware/ServoCamera.cpp \
+hardware/MotorDCfb.cpp \
+hardware/MotorDCLR.cpp \
+control/DriveController.cpp \
+control/TestDriveOp_g.cpp \
+orchestration/JoystickController.cpp \
+behavior/BehaviorManager.cpp \
+navigation/NavRuntime.cpp \
+navigation/NavManager.cpp \
+navigation/OdomRuntime.cpp \
+navigation/LidarPoseRuntime.cpp \
+navigation/LidarCorrectionHintsRuntime.cpp \
+Debugging/test_yaw/YawDebugLogger.cpp \
+Debugging/test_nav_odom/NavOdomDebugLogger.cpp \
+Debugging/test_nav_lidar/NavLidarDebugLogger.cpp \
+Debugging/toClient/ToClientJsonLogger.cpp \
+Debugging/toClient/ToClientVideoRecorder.cpp \
+Debugging/toClient/ToClientLidarPreviewWriter.cpp \
+dev_farm/DevFarmVideoRecorder.cpp \
+dev_farm/DevFarmLidarMapper.cpp \
+dev_farm/DevFarmOccupancyGridMapper.cpp \
+dev_farm/DevFarmPoseProvider.cpp \
+dev_farm/DevFarmScanMatcher.cpp \
+services/ros2_slam/Ros2SlamManager.cpp \
+services/ros2_slam/Ros2OdomUdpPublisher.cpp \
+perception/ObjectDetector.cpp \
+perception/TargetTracker.cpp \
+lidar/MiniLidarSDL.cpp \
+gui/UnifiedGui.cpp \
+gui/panels/NavStatusPanel.cpp \
+gui/panels/M5SensorsPanel.cpp \
+gui/panels/DetectionsPanel.cpp \
+gui/panels/DriveStatusPanel.cpp \
+gui/panels/LidarProximityPanel.cpp \
+gui/panels/DiagnosticsPanel.cpp \
+gui/panels/CameraViewPanel.cpp \
+gui/panels/LidarViewPanel.cpp \
+m5stick_comm/M5StickSerial.cpp \
+-I. \
+-I/home/ronen/Desktop/RBV2_NJOrin_ver31_devFarm_tomato \
+-I/home/ronen/Desktop/RBV2_NJOrin_ver31_devFarm_tomato/external/json \
+-I/usr/include/opencv4 \
+$(pkg-config --cflags --libs opencv4) \
+-I/usr/include/SDL2 -D_REENTRANT \
+-I/usr/local/cuda/include \
+-L/usr/local/cuda/lib64 \
+-lSDL2 -pthread \
+-lnvinfer -lnvonnxparser -lcudart \
+-o amain
+
+
+
+RBV2_NJOrin_ver31_devFarm
+
+
+//buttons for point way
+T מגדיל GX
+G מקטין GX
+Y מגדיל GY
+H מקטין GY
+R מחזיר לברירת המחדל
+
+
+sudo ./amain
+
+
+//guide for option g in menu
+מקשים חדשים (ב־Drive Mode g)
+1 = להוריד מהירות CH1 (FB)
+2 = להעלות מהירות CH1 (FB)
+3 = להוריד מהירות CH2 (LR)
+4 = להעלות מהירות CH2 (LR)
+R = איפוס למהירויות ברירת מחדל (CH1=60, CH2=30)
+
+
+
+--aaaaaaaaaaaaa
+pair 00:1F:E2:98:E0:5B
+trust 00:1F:E2:98:E0:5B
+connect 00:1F:E2:98:E0:5B
+
+
+//test if cabel csi of camera conect
+gst-launch-1.0 nvarguscamerasrc sensor-id=0 ! \
+'video/x-raw(memory:NVMM), width=(int)1280, height=(int)720, framerate=(fraction)30/1, format=(string)NV12' ! \
+nvvidconv flip-method=2 ! \
+nvegltransform ! nveglglessink -e
+
+
+// if camera stock and not work , that restart the camera
+sudo systemctl restart nvargus-daemon
+
+
+//chack what size of video of option z in joystick
+ls -lh Debugging/devFarm/videos/
+

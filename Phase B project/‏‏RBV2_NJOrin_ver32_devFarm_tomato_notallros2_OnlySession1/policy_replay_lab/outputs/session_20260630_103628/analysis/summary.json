@@ -1,0 +1,63 @@
+{
+  "color_corrections_by_reason": {
+    "unripe_to_ripe_by_mask_color": 137
+  },
+  "color_corrections_csv": "policy_replay_lab/outputs/session_20260630_103628/analysis/color_corrections.csv",
+  "color_corrections_total": 137,
+  "comparison_debug_dir": "policy_replay_lab/outputs/session_20260630_103628/analysis/comparison_debug",
+  "config_path": "policy_replay_lab/configs/policy_v32_experiment.json",
+  "cpp_jsonl": "policy_replay_lab/outputs/session_20260630_103628/cpp_replay/cpp_replay_detections.jsonl",
+  "csv_path": "policy_replay_lab/outputs/session_20260630_103628/analysis/policy_compare.csv",
+  "debug_image_index_csv": "policy_replay_lab/outputs/session_20260630_103628/analysis/debug_image_index.csv",
+  "debug_images_with_color_correction": 99,
+  "debug_images_with_heuristics": 81,
+  "debug_images_with_review": 93,
+  "debug_images_written": 239,
+  "frames": 239,
+  "heuristic_class_counts": {
+    "HEURISTIC mixed bunch": 19,
+    "HEURISTIC ripe bunch": 19,
+    "HEURISTIC unripe bunch": 59
+  },
+  "heuristic_maturity_counts": {
+    "mixed": 19,
+    "ripe": 19,
+    "unripe": 59
+  },
+  "heuristics_by_group": {
+    "images_ok_raw": 52,
+    "images_weak_noise_raw": 45
+  },
+  "heuristics_jsonl": "policy_replay_lab/outputs/session_20260630_103628/analysis/heuristics.jsonl",
+  "heuristics_only_debug_dir": "policy_replay_lab/outputs/session_20260630_103628/analysis/heuristics_only_debug",
+  "heuristics_total": 97,
+  "manual_review_queue_csv": "policy_replay_lab/outputs/session_20260630_103628/analysis/manual_review_queue.csv",
+  "manual_review_queue_total": 382,
+  "model_new_status_counts": {
+    "color_corrected": 137,
+    "noise": 513,
+    "review": 148,
+    "strong": 274,
+    "weak": 1252
+  },
+  "model_old_status_counts": {
+    "noise": 513,
+    "strong": 283,
+    "weak": 1528
+  },
+  "model_rows": 2324,
+  "model_rows_by_group": {
+    "images_ok_raw": 1220,
+    "images_weak_noise_raw": 1104
+  },
+  "new_policy_debug_dir": "policy_replay_lab/outputs/session_20260630_103628/analysis/new_policy_debug",
+  "old_policy_debug_dir": "policy_replay_lab/outputs/session_20260630_103628/analysis/old_policy_debug",
+  "output_dir": "policy_replay_lab/outputs/session_20260630_103628/analysis",
+  "regular_review_candidates_csv": "policy_replay_lab/outputs/session_20260630_103628/analysis/regular_review_candidates.csv",
+  "review_candidates_by_reason": {
+    "near_threshold_ripe_color_mask_support": 30,
+    "near_threshold_unripe_color_mask_support": 118
+  },
+  "review_candidates_total": 148,
+  "schema": "rbv2_policy_replay_python_summary_v3"
+}

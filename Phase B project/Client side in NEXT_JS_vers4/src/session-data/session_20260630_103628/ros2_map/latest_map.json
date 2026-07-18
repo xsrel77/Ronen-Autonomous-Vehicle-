@@ -1,0 +1,10 @@
+{
+  "created_at_unix_ms": 2839198,
+  "map_pgm": "maps/ros2_slam/session_20260630_102850/map.pgm",
+  "map_yaml": "maps/ros2_slam/session_20260630_102850/map.yaml",
+  "navigation_enabled": false,
+  "odom_source": "estimated_cmd_imu_no_encoders",
+  "session_dir": "maps/ros2_slam/session_20260630_102850",
+  "source": "slam_toolbox",
+  "valid": true
+}

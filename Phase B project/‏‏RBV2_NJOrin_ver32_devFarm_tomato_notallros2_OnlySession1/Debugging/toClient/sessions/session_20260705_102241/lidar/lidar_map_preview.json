@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "kind": "to_client_lidar_preview",
+  "stopped_at_ms": 3621919,
+  "stop_reason": "manual_L2",
+  "max_preview_points": 6000,
+  "grid_resolution_m": 0.0800,
+  "max_points_per_scan_for_client": 220,
+  "accumulate_only_while_moving": true,
+  "scans_accepted_for_preview": 0,
+  "scans_skipped_no_motion": 0,
+  "point_count": 0,
+  "coordinate_frame": "robot_base_lidar_2d_compact_preview",
+  "units": {"x": "m", "y": "m", "distance": "m", "angle": "deg"},
+  "points": [
+  ]
+}

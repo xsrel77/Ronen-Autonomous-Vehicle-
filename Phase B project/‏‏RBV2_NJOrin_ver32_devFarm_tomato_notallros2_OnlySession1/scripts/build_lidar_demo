@@ -1,0 +1,13 @@
+// test the minilidar conect to jetson
+ls /dev/ttyUSB*
+dmesg | tail -n 30
+
+
+//complie first test on mini lidar
+g++ -std=c++17 -O2 -Wall -Wextra mini_lidar_sdl.cpp -o mini_lidar_sdl `sdl2-config --cflags --libs` -pthread
+
+./mini_lidar_sdl /dev/ttyUSB0
+
+
+//code minilidar in eco-robot in squerd tounggle in joystick
+

@@ -1,0 +1,17 @@
+{
+  "schema": "rbv2_policy_replay_cpp_summary_v1",
+  "session_id": "session_20260630_103628",
+  "mode": "policy_only",
+  "project_root": "/home/ronen/Desktop/RBV2_NJOrin_ver32_devFarm_tomato/",
+  "session_path": "/home/ronen/Desktop/RBV2_NJOrin_ver32_devFarm_tomato/Debugging/toClient/sessions/session_20260630_103628",
+  "engine_path": "/home/ronen/Desktop/RBV2_NJOrin_ver32_devFarm_tomato/models/best8s_seg_v43_fp16.engine",
+  "output_dir": "/home/ronen/Desktop/RBV2_NJOrin_ver32_devFarm_tomato/policy_replay_lab/outputs/session_20260630_103628/cpp_replay",
+  "images_total": 239,
+  "images_failed": 0,
+  "final_detections_total": 2324,
+  "raw_candidates_total": 2324,
+  "images_by_group": {
+    "images_ok_raw": 129,
+    "images_weak_noise_raw": 110
+  }
+}

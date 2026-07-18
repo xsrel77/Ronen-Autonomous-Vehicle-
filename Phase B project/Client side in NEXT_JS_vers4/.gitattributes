@@ -1,0 +1,2 @@
+src/filetestjson/to_client_debug_log.jsonl filter=lfs diff=lfs merge=lfs -text
+src/session-data/**/videos/*.mp4 filter=lfs diff=lfs merge=lfs -text

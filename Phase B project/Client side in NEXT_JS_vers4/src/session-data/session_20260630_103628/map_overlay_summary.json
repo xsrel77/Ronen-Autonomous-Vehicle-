@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "kind": "rbv2_map_overlay_summary",
+  "session_id": "session_20260630_103628",
+  "stop_reason": "manual_L2",
+  "stopped_at_ms": 3494909,
+  "map_assets_copied": true,
+  "map_assets_copy_error": "",
+  "paths": {
+    "map_pose_timeline": "map_pose_timeline.jsonl",
+    "detections_on_map": "detections_on_map.jsonl",
+    "copied_latest_map": "ros2_map/latest_map.json",
+    "copied_map_session_dir": "ros2_map/map_session/session_20260630_102850",
+    "copied_map_yaml": "ros2_map/map_session/session_20260630_102850/map.yaml",
+    "copied_map_pgm": "ros2_map/map_session/session_20260630_102850/map.pgm"
+  },
+  "map": {
+    "loaded": true,
+    "valid": true,
+    "map_yaml": "maps/ros2_slam/session_20260630_102850/map.yaml",
+    "map_pgm": "maps/ros2_slam/session_20260630_102850/map.pgm",
+    "session_dir": "maps/ros2_slam/session_20260630_102850",
+    "width": 68,
+    "height": 119,
+    "resolution_m": 0.050000,
+    "origin_x": -2.070000,
+    "origin_y": -2.350000,
+    "origin_yaw_rad": 0.000000
+  },
+  "manual_start": {
+    "set": true,
+    "x": 2.221392,
+    "y": 5.045232,
+    "yaw_deg": 0.000000
+  },
+  "first_pose": {
+    "available": true,
+    "timestamp_ms": 3258052,
+    "x": 2.222339,
+    "y": 5.090969,
+    "yaw_deg": 0.414783,
+    "distance_m": 0.045747
+  },
+  "final_pose": {
+    "available": true,
+    "timestamp_ms": 3494694,
+    "x": 2.169745,
+    "y": 3.171208,
+    "yaw_deg": 6.811547,
+    "distance_m": 1.874736
+  },
+  "counts": {
+    "map_pose_rows": 861,
+    "detections_on_map_events": 239,
+    "trail_count": 299
+  }
+}
